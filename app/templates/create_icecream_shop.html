@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание магазина</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+
+        <input type="text" name="shopname" placeholder="Введите название магазина">
+        <input type="text" name="address" placeholder="Введите адресс магазина">
+
+        <button type="submit">Создать магазин</button>
+    </form>
+</body>
+</html>
